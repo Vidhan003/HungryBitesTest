@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Hungry Bites Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  background:#111;
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+}
+.menu-wrap{
+  max-width:1100px;
+  margin:20px auto;
+  background:#0b0b0b;
+  border:4px solid #c62828;
+  padding:20px;
+}
+.header{
+  text-align:center;
+  margin-bottom:20px;
+}
+.header h1{
+  color:#ffcc00;
+  font-size:42px;
+  margin:0;
+}
+.header p{
+  margin:5px 0 0;
+  font-size:14px;
+}
+
+.columns{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:20px;
+}
+
+.section{
+  margin-bottom:20px;
+}
+.ribbon{
+  background:#c62828;
+  display:inline-block;
+  padding:6px 18px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:10px;
+}
+.item{
+  display:flex;
+  justify-content:space-between;
+  border-bottom:1px dashed #444;
+  padding:4px 0;
+  font-size:14px;
+}
+.price{
+  color:#ffcc00;
+}
+.footer{
+  text-align:center;
+  font-size:12px;
+  margin-top:15px;
+  color:#aaa;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    grid-template-columns: 1fr;  
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .ribbon {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  .item {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 13px;
+  }
+
+  .menu-wrap {
+    padding: 15px;
+  }
+}
+</style>
+</head>
+<body>
+    <a href="index.html" style="
+  display:inline-block;
+  margin-bottom:5px;
+  padding:6px 16px;
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:4px;
+  margin-top: 20px;
+  
+">
+← Back
+</a>
+
+<div class="menu-wrap">
+
+  <div class="header">
+    <h1>The Hungry Bites</h1>
+    <p>📞 8146503757</p>
+  </div>
+
+  <div class="columns">
+
+    <!-- Column 1 -->
+    <div>
+      <div class="section">
+        <div class="ribbon">Pizza</div>
+        <div class="item"><span>Classic Pizza</span><span class="price">₹90</span></div>
+        <div class="item"><span>Margherita Pizza</span><span class="price">₹100</span></div>
+        <div class="item"><span>Mixed Veg Pizza</span><span class="price">₹100</span></div>
+        <div class="item"><span>Mixed Veg Cheese Pizza</span><span class="price">₹110</span></div>
+        <div class="item"><span>Corn Pizza</span><span class="price">₹100</span></div>
+        <div class="item"><span>Cheese Corn Pizza</span><span class="price">₹110</span></div>
+        <div class="item"><span>Cheese Paneer Pizza</span><span class="price">₹120</span></div>
+        <div class="item"><span>Double Cheese Paneer Pizza</span><span class="price">₹130</span></div>
+        <div class="item"><span>Loaded Pizza</span><span class="price">₹150</span></div>
+        <div class="item"><span>Kulhad Pizza</span><span class="price">₹150</span></div>
+      </div>
+
+      <div class="section">
+        <div class="ribbon">Burger</div>
+        <div class="item"><span>Veg Burger</span><span class="price">₹45</span></div>
+        <div class="item"><span>Veg Cheese Burger</span><span class="price">₹50</span></div>
+        <div class="item"><span>Veg Paneer Burger</span><span class="price">₹50</span></div>
+        <div class="item"><span>Cheese Paneer Burger</span><span class="price">₹55</span></div>
+        <div class="item"><span>Veg Paneer Cheese Burger</span><span class="price">₹60</span></div>
+        <div class="item"><span>Double Cheese Burger</span><span class="price">₹60</span></div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <div class="section">
+        <div class="ribbon">Sandwich</div>
+        <div class="item"><span>Veg Sandwich</span><span class="price">₹50</span></div>
+        <div class="item"><span>Veg Cheese Sandwich</span><span class="price">₹60</span></div>
+        <div class="item"><span>Corn Sandwich</span><span class="price">₹55</span></div>
+        <div class="item"><span>Cheese Corn Sandwich</span><span class="price">₹60</span></div>
+        <div class="item"><span>Tandoori Sandwich</span><span class="price">₹65</span></div>
+        <div class="item"><span>Schezwan Sandwich</span><span class="price">₹65</span></div>
+        <div class="item"><span>Schezwan Cheese Sandwich</span><span class="price">₹75</span></div>
+        <div class="item"><span>Loaded Sandwich</span><span class="price">₹100</span></div>
+      </div>
+
+      <div class="section">
+        <div class="ribbon">Roll</div>
+        <div class="item"><span>Veg Roll</span><span class="price">₹45</span></div>
+        <div class="item"><span>Veg Cheese Roll</span><span class="price">₹55</span></div>
+        <div class="item"><span>Paneer Roll</span><span class="price">₹55</span></div>
+        <div class="item"><span>Cheese Paneer Roll</span><span class="price">₹60</span></div>
+        <div class="item"><span>Veg Paneer Cheese Roll</span><span class="price">₹70</span></div>
+        <div class="item"><span>Schezwan Cheese Roll</span><span class="price">₹80</span></div>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <div class="section">
+        <div class="ribbon">Pasta</div>
+        <div class="item"><span>Veg Pasta</span><span class="price">₹70</span></div>
+        <div class="item"><span>Veg Cheese Pasta</span><span class="price">₹100</span></div>
+        <div class="item"><span>White Sauce Pasta</span><span class="price">₹100</span></div>
+        <div class="item"><span>Red Sauce Pasta</span><span class="price">₹100</span></div>
+        <div class="item"><span>Cheese Corn Pasta</span><span class="price">₹110</span></div>
+      </div>
+
+      <div class="section">
+        <div class="ribbon">Patties</div>
+        <div class="item"><span>Aloo Masala Patties</span><span class="price">₹25</span></div>
+        <div class="item"><span>Cheese Masala Patties</span><span class="price">₹35</span></div>
+        <div class="item"><span>Paneer Patties</span><span class="price">₹35</span></div>
+        <div class="item"><span>Cheese Paneer Patties</span><span class="price">₹45</span></div>
+        <div class="item"><span>Pizza Patties</span><span class="price">₹40</span></div>
+        <div class="item"><span>Double Cheese Pizza Patties</span><span class="price">₹50</span></div>
+        <div class="item"><span>Corn Patties</span><span class="price">₹40</span></div>
+        <div class="item"><span>Cheese Corn Patties</span><span class="price">₹50</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+     Makronia, Sagar (MP)
+  </div>
+
+</div>
+
+</body>
+</html>
